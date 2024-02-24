@@ -1,6 +1,9 @@
 #include "sort.h"
+
 /**
- * counting_sort - Sort an array of integers in ascending order
+* stupify - recurrssive heapfiy function
+* @array: Array to sort
+* @heap: size of heap data
 * @i: index
 * @size: size of array
 */
@@ -26,7 +29,6 @@ void stupify(int *array, int heap, int i, int size)
 * @array: array to sort
 * @size: Size of array to sort
 */
-
 void heap_sort(int *array, size_t size)
 {
         int i = size / 2 - 1, temp;
