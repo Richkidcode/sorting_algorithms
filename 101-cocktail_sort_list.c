@@ -1,3 +1,4 @@
+
 #include "sort.h"
 
 /**
@@ -36,13 +37,14 @@ void switch_nodes(listint_t **list, listint_t **p)
                 four->prev = two;
         three->next = two;
         three->prev = two->prev;
-        if (one)
+	if (one)
                 one->next = three;
         else
                 *list = three;
         two->prev = three;
         *p = three;
 }
+
 /**
  *  cocktail_sort_list - function sorts a doubly linked list using
  * the cocktail sort algorithm
