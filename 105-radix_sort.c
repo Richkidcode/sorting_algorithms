@@ -24,7 +24,6 @@ void radix_sort(int *array, size_t size)
                 print_array(array, size);
         }
 }
-
 /**
  * count_sort_LSD - count sort with LSD
  * @array: array to sort
@@ -54,3 +53,4 @@ void count_sort_LSD(int *array, size_t size, size_t lsd)
 
         free(out_arr);
 }
+   
